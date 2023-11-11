@@ -1,0 +1,26 @@
+{
+  "name": "solidity",
+  "version": "1.0.0",
+  "description": "solidity学习记录分享~👏",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build --dest html"
+  },
+  "author": "kareza",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.68"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karezachen/solidity.git"
+  },
+  "keywords": [
+    "solidity"
+  ],
+  "bugs": {
+    "url": "https://github.com/karezachen/solidity/issues"
+  },
+  "homepage": "https://github.com/karezachen/solidity#readme"
+}

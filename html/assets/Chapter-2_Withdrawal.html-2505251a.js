@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6d3f2dc0","path":"/Lesson-4/Chapter-2_Withdrawal.html","title":"第2章：提现","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"第2章：提现","description":"从合约中提现以太"},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Lesson-4/Chapter-2_Withdrawal.md"}');export{t as data};

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "solidity学习记录分享~👏",
   "main": "index.js",
+  "base": "/solidity/",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -22,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/karezachen/solidity/issues"
   },
-  "homepage": "https://github.com/karezachen/solidity#readme"
+  "homepage": "https://karezachen.github.io/solidity"
 }

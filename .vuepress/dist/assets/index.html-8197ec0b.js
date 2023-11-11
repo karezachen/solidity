@@ -1,1 +1,0 @@
-const a=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"欢迎页～👏","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"欢迎页～👏","description":"一起开始快乐学习Solidity吧～"},"headers":[],"git":{"updatedTime":1699700793000,"contributors":[{"name":"kareza","email":"kareza@qq.com","commits":1}]},"filePathRelative":"README.md"}');export{a as data};

@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      - run: npm install --dependencies
       - run: npm run docs:build
 
       # 查看 workflow 的文档来获取更多信息

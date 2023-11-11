@@ -1,9 +1,4 @@
----
-lang: zh-CN
-title: payable 修饰符
-description: 使用 payable 函数修饰符接受以太坊
----
-# payable 修饰符
+# 可支付
 
 `payable`方法是让`Solidity`和以太坊变得如此酷的一部分 -- 它们是一种可以接受以太的特殊函数。
 

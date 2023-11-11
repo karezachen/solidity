@@ -4,8 +4,8 @@
   "description": "solidity学习记录分享~👏",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build --dest docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "author": "kareza",
   "license": "MIT",

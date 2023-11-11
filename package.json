@@ -1,7 +1,7 @@
 {
-  "name": "solidity",
+  "name": "hello-solidity",
   "version": "1.0.0",
-  "description": "solidity学习记录分享~👏",
+  "description": "solidity 学习分享~ 👏",
   "main": "index.js",
   "base": "/solidity/",
   "scripts": {

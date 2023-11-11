@@ -1,9 +1,1 @@
----
-lang: zh-CN
-title: 欢迎页～👏
-description: 一起开始快乐学习Solidity吧～
----
-一起开始快乐学习Solidity吧～
-
-- [第1章：可支付](Lesson-4/Chapter-1_Payable.html)
-- [第2章：提现](Lesson-4/Chapter-2_Withdrawal.html)
+# Hello Solidity## 这是什么？这是一份学习`Solidity`的笔记，将比较完整的函盖`Solidity`相关的知识点。目前还在持续编辑中，预计12月底完稿～如果阅读文章发现问题，欢迎在 github 给我提交[PR](https://github.com/karezachen/solidity/compare)或者[issue](https://github.com/karezachen/solidity/issues/new)。## 为什么要写这个？笔者正在通过[加密僵尸](https://cryptozombies.io/)网站的课程系统性的学习`Solidity`，但深知如此走马观花的学习将导致效果奇差，于是决定采用[费曼学习法](https://wiki.mbalib.com/wiki/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95)，在学习的同时输出学习笔记，一方面加深学习深度，一方面也希望能给读者提供一些微薄的帮助。[![Star History Chart](https://api.star-history.com/svg?repos=karezachen/solidity&type=Date)](https://star-history.com/#karezachen/solidity&Date)## 如何在线阅读在线笔记通过[VuePress 2](https://v2.vuepress.vuejs.org/zh/)构建静态页面，部署在[GitHub Pages](https://pages.github.com/)。在线阅读地址：https://karezachen.github.io/solidity/## 转载本作品由[karea](https://github.com/karezachen)创作，采用[MIT](LICENSE)协议进行授权

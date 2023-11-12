@@ -20,15 +20,11 @@ export default defineUserConfig({
       text: 'GitHub',
       link: 'https://github.com/karezachen/solidity'
     }],
-    sidebar: [{
-      text: '支付与提现',
-      link: 'payment-and-withdrawal.md',
-      collapsable: false,
-      sidebarDepth: 1,
-      children: [
-        'payable.md',
-        'withdrawal.md',
-      ]
-    }]
+    sidebar: [
+      'random-number.md',
+      'payable.md',
+      // 'withdrawal.md',
+      'glossary.md'
+    ]
   })
 })

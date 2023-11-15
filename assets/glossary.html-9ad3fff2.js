@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d020322","path":"/glossary.html","title":"名词释义","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"编程相关","slug":"编程相关","link":"#编程相关","children":[]}],"git":{"updatedTime":1700068698000,"contributors":[{"name":"kareza","email":"kareza@qq.com","commits":1}]},"filePathRelative":"glossary.md"}');export{e as data};

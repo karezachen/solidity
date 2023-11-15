@@ -23,7 +23,7 @@ export default defineUserConfig({
     sidebar: [
       'random-number.md',
       'payable.md',
-      // 'withdrawal.md',
+      'withdrawal.md',
       'glossary.md'
     ]
   })

@@ -1,30 +1,35 @@
 # 提现
 
-在上一章，我们学习了如何向合约发送以太，那么在发送之后会发生什么呢？
+在本节一个非常重要的概念 —— 提现
 
-在你发送以太之后，它将被存储进合约的以太坊账户中，并冻结在那里 -- 除非你添加一个函数来从合约中把以太提现。
+当我们部署的智能合约接受到调用方支付的以太之后，
 
-你可以写一个函数来从合约中提现以太，类似这样：
+非常关键的一件事情，我们该如何将以太提现到自己的账户呢？
+
+废话少说，直接上代码：
 
 ```solidity
-contract GetPaid is Ownable {
-	function withdraw() wxternal onlyOwner {
-		owner.transfer(this.balance);
-	}
+function withdraw() external {
+	// 判断调用方是否合约为所有者
+	require(msg.sender == owner);
+	// 将余额转给合约所有者
+	owner.transfer(this.balance);
 }
 ```
 
-注意，我们使用 Ownable 合约中的 owner 和 onlyOwner，假定它已经被引入了。
+我们可以使用transfer向任何以太坊地址付钱，
 
-你可以通过 transfer 函数向一个地址发送以太，然后 this.balance 将返回当前合约存储了多少以太。所以如果 100 个用户每人向我们支付1以太，this.balance 将是100以太。
+所以我们也可以在调用方超额付款的时候给他们退钱，
 
-你可以通过transfer向任何以太坊地址付钱。比如，你可以有一个函数在msg.sender超额付款的时候给他们退钱：
+让我们强化下[可提现](payable.md)中的代码：
 
 ```solidity
-uint itemFee = 0.001 ether;
-msg.sender.transfer(msg.value - itemFee);
+function doSomething() external payable {
+  // 检查调用方是否支付0.001以太
+  require(msg.value >= 0.001 ether);
+  // 将超额付款退回
+  msg.sender.transfer(msg.value - 0.001 ether);
+  // 如果已支付，则运行函数逻辑
+  do();
+}
 ```
-
-或者在一个有买家和卖家的合约中，你可以把卖家的地址存储起来，当有人买了它的东西的时候，把买家支付的钱发送给它 seller.transfer(msg.value)。
-
-有很多例子来展示什么让以太坊编程如此之酷 -- 你可以拥有一个不被任何人控制的去中心化市场。
